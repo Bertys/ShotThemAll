@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.css">
+        <script src="js/jquery-1.11.0.js"></script>
+        <script src="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>
+        
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Shot Them All</title>
+    </head>
+    <body>
+        
+        <!-- Start of MAIN page -->
+    
+<div data-role="page" class="jqm-demos" id="panel-fixed-page1" data-title="Panel fixed positioning" data-url="panel-fixed-page1">
+	<div data-role="header" data-position="fixed">
+		<h1>Menú superior P0</h1>  
+		<a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+		<a href="#add-form" data-icon="gear" data-iconpos="notext">Add</a>
+	</div><!-- /header -->
+    
+	<div role="main" class="ui-content jqm-content jqm-fullwidth">
+          
+            <!--<div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+            </div>-->
+        
+        <h2>Pagina Principal de la Aplicación</h2>
+        <p>1. Hacer Fotos</p>
+        <p>2. Listar Fotos</p>
+        
+	</div><!-- /content -->
+    
+	<div data-role="footer" data-position="fixed">
+		<h4>Menú inferior P0</h4>    
+	</div><!-- /footer -->
+    
+	<div data-role="panel" data-position-fixed="true" data-display="push" data-theme="b" id="nav-panel">
+		<ul data-role="listview">
+			<li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+			<li><a href="#panel-fixed-page1">Home</a></li>
+			<li><a href="#one">Shot</a></li>
+			<li><a href="#two">List</a></li>
+		</ul>
+	</div><!-- /panel -->
+    
+	<div data-role="panel" data-position="right" data-position-fixed="true" data-display="overlay" data-theme="a" id="add-form">
+			  
+	</div><!-- /panel lateral derecho-->
+</div>
+        
+<!-- Start of first page -->
+<div data-role="page" id="one">
+	<div data-role="header" data-position="fixed">
+		<h1>Menú superior P1</h1>
+		<a href="#nav-panel2" data-icon="bars" data-iconpos="notext">Menu</a>
+		<a href="#add-form2" data-icon="gear" data-iconpos="notext">Add</a>
+	</div><!-- /header -->
+	<div role="main" class="ui-content jqm-content jqm-fullwidth">
+		            
+        <div>
+        <p>1. Hacer Fotos</p>    
+        <input type="Button" data-inline="true" value="Hacer Foto" id="b1" ng-click="takePicture()"> 
+        <img id="myImage" />
+		<p><a href="#panel-fixed-page1">Back to Index</a></p>
+		</div>
+	</div><!-- /content -->
+	<div data-role="footer" data-position="fixed">
+		<h4>Menú inferior P1</h4>
+	</div><!-- /footer -->
+	<div data-role="panel" data-position-fixed="true" data-display="push" data-theme="b" id="nav-panel2">
+		<ul data-role="listview">
+			<li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+				<li><a href="#panel-fixed-page1">Home</a></li>
+				<li><a href="#one">Shot</a></li>
+			<li><a href="#two">List</a></li>
+		</ul>
+	</div><!-- /panel -->
+	<div data-role="panel" data-position="right" data-position-fixed="true" data-display="overlay" data-theme="a" id="add-form2">
+        
+	</div><!-- /panel lateral derecho-->
+</div><!-- /page -->
+<!-- Start of second page -->
+<div data-role="page" id="two">
+	<div data-role="header" data-position="fixed">
+		<h1>Menú superior P2</h1>
+		<a href="#nav-panel3" data-icon="bars" data-iconpos="notext">Menu</a>
+		<a href="#add-form3" data-icon="gear" data-iconpos="notext">Add</a>
+	</div><!-- /header -->
+	<div role="main" class="ui-content jqm-content jqm-fullwidth">
+
+        
+        <h2 id="Photo-list">Listado de las fotos</h2>
+			<p>Visualiza las diferentes fotos capturadas desde la aplicación.</p>
+			<div data-demo-html="true">
+				<ul data-role="listview" data-inset="true" id="listPhotos">
+					
+					<!--<li><a href="#">
+						<img src="img/album-hc.jpg" />
+						<h2>Warning</h2>
+						<p>Hot Chip</p></a>
+					</li>-->
+					
+				</ul>
+			</div><!--/demo-html -->
+        
+		<p><a href="#panel-fixed-page1">Back to Index</a></p>
+
+	</div><!-- /content -->
+	<div data-demo-html="#panel-fixed-page1"></div><!--/demo-html -->
+	<div data-role="footer" data-position="fixed">
+		<h4>Menú inferior P2</h4>
+	</div><!-- /footer -->
+	<div data-role="panel" data-position-fixed="true" data-display="push" data-theme="b" id="nav-panel3">
+		<ul data-role="listview">
+			<li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+            <li><a href="#panel-fixed-page1">Home</a></li>
+            <li><a href="#one">Shot</a></li>
+			<li><a href="#two">List</a></li>
+		</ul>
+	</div><!-- /panel -->
+	<div data-role="panel" data-position="right" data-position-fixed="true" data-display="overlay" data-theme="a" id="add-form3">
+        
+	</div><!-- /panel lateral derecho-->
+</div><!-- /page -->
+
+
+        <script type="text/javascript" src="cordova.js"></script>  
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/files.js"></script>
+        
+    </body>
+</html>
