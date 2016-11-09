@@ -28,7 +28,14 @@ var app = {
 app.initialize();
 
 
+document.getElementById("b2").addEventListener("click", function(){
+    //alert("Entrando en b2");
+    loadFiles();
+});
 document.getElementById("b1").addEventListener("click", function(){
-    //alert("Entrando en takePicture");
+    //alert("Entrando en b1");
     cameraGetPicture();
+});
+document.getElementById("b3").addEventListener("click", function(){
+    //Función para probar cosas
 });
