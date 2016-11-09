@@ -11,7 +11,7 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/index2.css">
         <title>Shot Them All</title>
     </head>
     <body>
@@ -33,8 +33,9 @@
             </div>-->
         
         <h2>Pagina Principal de la Aplicación</h2>
-        <p>1. Hacer Fotos</p>
-        <p>2. Listar Fotos</p>
+        <p>1. ListOnTheFly</p>
+        <p>2. ListFromFolder</p>
+        <input type="Button" data-inline="true" value="Boton de Prueba" id="b3">
         
 	</div><!-- /content -->
     
@@ -46,8 +47,8 @@
 		<ul data-role="listview">
 			<li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
 			<li><a href="#panel-fixed-page1">Home</a></li>
-			<li><a href="#one">Shot</a></li>
-			<li><a href="#two">List</a></li>
+			<li><a href="#one">ListOnTheFly</a></li>
+			<li><a href="#two">ListFromFolder</a></li>
 		</ul>
 	</div><!-- /panel -->
     
@@ -66,9 +67,18 @@
 	<div role="main" class="ui-content jqm-content jqm-fullwidth">
 		            
         <div>
-        <p>1. Hacer Fotos</p>    
-        <input type="Button" data-inline="true" value="Hacer Foto" id="b1" ng-click="takePicture()"> 
-        <img id="myImage" />
+        <input type="Button" data-inline="true" value="Hacer Foto" id="b1">
+        <p>1. Muestreo de fotos: </p> 
+            <ul data-role="listview" data-inset="true" id="listPhotos1">
+					
+					<!--<li><a href="#">
+						<img src="img/album-hc.jpg" />
+						<h2>Warning</h2>
+						<p>Hot Chip</p></a>
+					</li>-->
+					
+				</ul>
+        
 		<p><a href="#panel-fixed-page1">Back to Index</a></p>
 		</div>
 	</div><!-- /content -->
@@ -79,8 +89,8 @@
 		<ul data-role="listview">
 			<li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
 				<li><a href="#panel-fixed-page1">Home</a></li>
-				<li><a href="#one">Shot</a></li>
-			<li><a href="#two">List</a></li>
+				<li><a href="#one">ListOnTheFly</a></li>
+			<li><a href="#two">ListFromFolder</a></li>
 		</ul>
 	</div><!-- /panel -->
 	<div data-role="panel" data-position="right" data-position-fixed="true" data-display="overlay" data-theme="a" id="add-form2">
@@ -100,7 +110,9 @@
         <h2 id="Photo-list">Listado de las fotos</h2>
 			<p>Visualiza las diferentes fotos capturadas desde la aplicación.</p>
 			<div data-demo-html="true">
-				<ul data-role="listview" data-inset="true" id="listPhotos">
+                <input type="Button" data-inline="true" value="Listar Carpeta" id="b2"> 
+                <p>Lista: </p>
+				<ul data-role="listview" data-inset="true" id="listPhotos2">
 					
 					<!--<li><a href="#">
 						<img src="img/album-hc.jpg" />
@@ -122,8 +134,8 @@
 		<ul data-role="listview">
 			<li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
             <li><a href="#panel-fixed-page1">Home</a></li>
-            <li><a href="#one">Shot</a></li>
-			<li><a href="#two">List</a></li>
+            <li><a href="#one">ListOnTheFly</a></li>
+			<li><a href="#two">ListFromFolder</a></li>
 		</ul>
 	</div><!-- /panel -->
 	<div data-role="panel" data-position="right" data-position-fixed="true" data-display="overlay" data-theme="a" id="add-form3">
